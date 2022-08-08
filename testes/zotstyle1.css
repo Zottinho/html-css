@@ -6,16 +6,50 @@
 }
 body{
     background-image: linear-gradient(to right, #BF665E, #F28157 );
+    background-image: url("imagens/imagemweb (1)1500.jpg");
+    background-position: center top;
+    background-size: cover;
+    height: 100%;
+    padding: 10px;
+    background-repeat: no-repeat;
+
 }
 
 main{
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(135, 108, 100, 0.6);
-    width: 1200px;
-    padding: 10px;
+    min-width: 300px;
+    max-width: 1200px;
+    padding: 20px;
     margin:auto;
+    text-align: justify;
+    line-height: 1.6;
+}
 
+nav{
+    background-color: #253659;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: azure;
+    text-decoration: none;
+
+}
+
+nav>a{
+    color: aliceblue;
+    text-decoration: none;
+    transition-duration: 5ms;
+    padding: 0px 10px;
+    
+}
+nav>a:hover{
+    border-radius: 10px;
+    color: black;
+    background-color: #03A696;
+}
+a:visited{
+    color: #03A696;
 }
 h1{
     background-color: #253659;
@@ -43,6 +77,8 @@ h3{
 h4{
     color: #253659;
     text-align: justify;
+    text-indent: 30px;
+
 }
 div{
     display: inline;
@@ -51,7 +87,7 @@ div{
     background-color: #253659;
     border: 1px solid black;
     text-align: center;
-    height: 200px;
+    height: 50px;
     width: 200px;
   
 }
