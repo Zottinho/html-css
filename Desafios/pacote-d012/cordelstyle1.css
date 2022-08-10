@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{ /*As configurações de âmbos em comum*/
+    min-height: 100vh; /*vw largura, 100% view port*/
+    background-color: darkgray;
+
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+
+}
+header > p{
+    padding-bottom: 50px;
+}
+a{
+    color: white;
+    text-decoration: none; /*tira o sublinhado*/
+    font-weight: bolder;
+}
+header > a:hover, footer > a:hover {
+     text-decoration: underline;
+}
+section > p{
+    padding-bottom: 2em;
+}
+
+section{ /*para todas as section*/
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /*2x espaçamento duplo entre as frases */
+    padding-left: 30px;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: darkslategray;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.603);
+    background-attachment: fixed;
+
+}
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.486);
+    width: 400px;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+    
+}
+section#img01{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+
+}
+section#img02{
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
