@@ -35,6 +35,41 @@ nav{
     text-decoration: none;
 
 }
+table{
+    position: relative; /*Isso é pra o cabeçalho andar com a tabela*/
+    border: 3px solid black;
+    vertical-align: middle;
+    border-collapse: collapse;
+
+}
+col.carea{
+    
+    color: white;
+}
+col.cnota{
+    
+    color: black;
+}
+td{
+    vertical-align: middle;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+}
+th{
+    text-align: center;
+}
+thead > tr > th {
+    position: sticky;
+    top: -1px;
+    background-color: #253659;
+    color: white;
+
+}
+tbody > tr:nth-child(2n-1){
+    background-color: #253659ab;
+}
 
 nav>a{
     color: aliceblue;

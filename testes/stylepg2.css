@@ -1,0 +1,38 @@
+@charset "UTF-8";
+*{
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+table{
+    position: relative; /*Isso é pra o cabeçalho andar com a tabela*/
+    border: 3px solid black;
+    vertical-align: middle;
+    border-collapse: collapse;
+
+}
+td{
+    vertical-align: middle;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+}
+th{
+    text-align: center;
+}
+thead > tr > th {
+    position: sticky;
+    top: -1px;
+    background-color: #253659;
+    color: white;
+}
+col.carea{
+    background-color: #253659;
+    color: white;
+}
+col.cnota{
+    
+    color: black;
+}
