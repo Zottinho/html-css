@@ -67,3 +67,9 @@ th{
 div#container{
     overflow-x: auto;
 }
+
+iframe#tela{
+    width: 950px;
+    height: 500px;
+    border: 2px solid black;
+}
