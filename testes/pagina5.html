@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .dropbtn{
+            background-color: aquamarine;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+        } /* Configurações da aparencia do Botão*/
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: bisque;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px red;
+            z-index: 1;
+        } /*Config quando abre o botão*/ 
+        .dropdown-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover{
+            background-color: blueviolet;
+        }/*Quando o cursor seleciona algo*/
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        .dropdown:hover .dropbtn{
+            background-color:blue;
+        }/*Quando abre o menu muda a cor do indice*/
+
+    </style>
+    <title>Teste de Menu</title>
+</head>
+<body>
+<div class="dropdown">
+    <button class="dropbtn"Drops>CHAMBRA!</button>
+    <div class="dropdown-content">
+        <a href="#">Ch1</a>
+        <a href="#">Ch1</a>
+        <a href="#">Ch1</a>
+        <a href="#">Ch1</a>
+
+    </div>
+</div>
+    
+</body>
+</html>
