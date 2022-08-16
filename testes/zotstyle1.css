@@ -72,7 +72,25 @@ li a:hover{
     background-color: #04aa6d;
     color: white;
 }
+.dropbtn{
+    background-color: #03A696;
+    color: wheat;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #04aa6d;
+    min-width: 160px;
+}
 
 table{
     position: relative; /*Isso é pra o cabeçalho andar com a tabela*/
