@@ -72,25 +72,47 @@ li a:hover{
     background-color: #04aa6d;
     color: white;
 }
-.dropbtn{
+
+/* Botão Menu */
+/* "suspender" "btnsuspender" "conteudo-suspenso"  */
+.btnsuspender{
     background-color: #03A696;
-    color: wheat;
+    color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
-    cursor: pointer;
-
+    cursor: pointer; /* Faz com que apareça uma mãozinha */
 }
-.dropdown{
+.suspender{
     position: relative;
     display: inline-block;
 }
-.dropdown-content{
+.conteudo-suspenso{
     display: none;
     position: absolute;
-    background-color: #04aa6d;
-    min-width: 160px;
+    background-color: #0d083d;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgb(41, 9, 155);
+    z-index: 2;
+    
 }
+.conteudo-suspenso nav > a{
+    color: #04aa6d;
+    padding: 2px 6px;
+    text-decoration: none;
+    display: block;
+    min-width: 350px;
+}
+.conteudo-suspenso a:hover{
+    background-color: #25aa04;
+}
+.suspender:hover .conteudo-suspenso{
+    display: block;
+}
+.suspender:hover .btnsuspender{
+    background-color: #253659;
+}
+/* Botão Menu */
 
 table{
     position: relative; /*Isso é pra o cabeçalho andar com a tabela*/
