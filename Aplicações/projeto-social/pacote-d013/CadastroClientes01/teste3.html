@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Test</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  </head>
+
+  <body>
+    
+    <button id="test" type="button" py-onClick="speak()">run test</button>
+    <div id="display"></div>
+
+<py-script>
+
+def speak():
+    Element('display').write("Hello")
+
+</py-script>
+
+
+  </body>
+</html>
