@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    background-image: linear-gradient(to right, #BF665E, #F28157 );
+    background-image: url("Imagens\pexels-edvin-richardson-796206.jpg");
+    background-color: black;
+    background-position: center top;
+    background-size: cover;
+    height: 100%;
+    padding: 10px;
+    background-repeat: no-repeat;
+
+}
+
+main{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(135, 108, 100, 0.6);
+    min-width: 300px;
+    max-width: 1200px;
+    padding: 20px;
+    margin:auto;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+nav{
+    background-color: #253659;
+    
+    border-radius: 10px;
+    color: azure;
+    text-decoration: none;
+
+}
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 25%;
+    background-color: #f1f1f1;
+    border: 1px solid #555;
+   /* height: 100%;
+    position: fixed;
+    overflow: auto;
+    */
+}
+li a{
+    display: block;
+    width: 60px;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-bottom: 1px solid #555;
+    display: inline;
+    float: left;
+
+}
+
+li:last-child{
+    border-bottom: none;
+}
+
+li a:hover{
+    background-color: #555;
+    color: white;
+}
+/*Add an "active" class to the current link to let the user know which page he/she is on:*/
+.active{
+    background-color: #04aa6d;
+    color: white;
+}
+
+/* Botão Menu */
+/* "suspender" "btnsuspender" "conteudo-suspenso"  */
+.btnsuspender{
+    background-color: #03A696;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer; /* Faz com que apareça uma mãozinha */
+}
+.suspender{
+    position: relative;
+    display: inline-block;
+}
+.conteudo-suspenso{
+    display: none;
+    position: absolute;
+    background-color: #0d083d;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgb(41, 9, 155);
+    z-index: 2;
+    
+}
+.conteudo-suspenso nav > a{
+    color: #04aa6d;
+    padding: 2px 6px;
+    text-decoration: none;
+    display: block;
+    min-width: 350px;
+}
+.conteudo-suspenso a:hover{
+    background-color: #25aa04;
+}
+.suspender:hover .conteudo-suspenso{
+    display: block;
+}
+.suspender:hover .btnsuspender{
+    background-color: #253659;
+}
+/* Botão Menu */
+
+table{
+    position: relative; /*Isso é pra o cabeçalho andar com a tabela*/
+    border: 3px solid black;
+    vertical-align: middle;
+    border-collapse: collapse;
+
+}
+col.carea{
+    
+    color: white;
+}
+col.cnota{
+    
+    color: black;
+}
+td{
+    vertical-align: middle;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+}
+th{
+    text-align: center;
+}
+thead > tr > th {
+    position: sticky;
+    top: -1px;
+    background-color: #253659;
+    color: white;
+
+}
+tbody > tr:nth-child(2n-1){
+    background-color: #253659ab;
+}
+
+nav>a{
+    color: aliceblue;
+    text-decoration: none;
+    transition-duration: 5ms;
+    padding: 0px 10px;
+    
+}
+nav>a:hover{
+    border-radius: 10px;
+    color: black;
+    background-color: #03A696;
+}
+a:visited{
+    color: #03A696;
+}
+h1{
+    background-color: #253659;
+    border-radius: 10px;
+    text-align: center; 
+    height: 50px;
+    width: 500px;
+    margin: auto;
+
+}
+h2{
+    display: inline;
+    background-color: #253659;
+    border-radius: 5px;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    
+}
+h3{
+    display: inline;
+    color: #03A696;
+    text-align: justify;
+}
+h4{
+    color: #253659;
+    text-align: justify;
+    text-indent: 30px;
+
+}
+div{
+    display: inline;
+    margin: auto;
+    display: inline-block;
+    background-color: #253659;
+    border: 1px solid black;
+    text-align: center;
+    height: 50px;
+    width: 200px;
+  
+}
